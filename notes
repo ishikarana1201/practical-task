@@ -1,0 +1,27 @@
+1:- Create React Project -Done
+2:- Create three pages (Must handle with the routing library)
+Home About Head & Tail -Done
+3:- On the Home page, there should be two links for the About page and the Head & Tail page. -Done
+4:- On the About page there will be a simple paragraph -Done
+5:- In Head & Tail page you need to add one dropdown & one submit button.
+- Here you need to implement a logic for head & tail.
+- First of all, you need to add two values in the dropdown ‘ H ‘ & ‘ T ‘ 
+and by default, there will be the text “select value” as a placeholder (if you haven’t selected anything).
+- Select any value from the dropdown (H or T) and click on submit button. Now suppose you choose the H value and it should be visible below submit button, And now if you add two more times H then those 2 H chars should be visible below the first H (Below is the example)
+H ← first added H
+H ← second added H
+H ← third added H
+- Now If you select T then It should be visible beside First H, and if you again add T
+then it should be visible below the first T (Below is an example) HT
+HT
+H
+- Now if you add H then it should be visible beside the first T, and If you again add T
+then It should visible beside H (Below is an example) HTHT
+HT
+H
+- now at last if you again add T then it should be visible below the first T HTHT
+HTT
+H
+All you need to do is make separate columns for H and T, if you add same char then it will visible below that added char, if you add a new then we’ll create a new column.
+6:- Put a validation in submit button , if you have not selected H or T then there should be one validation message like “Please select value from dropdown”.
+7:- Once you select any value from dropdown and click on submit button, the dropdown should reset to default value (which is “select value”).

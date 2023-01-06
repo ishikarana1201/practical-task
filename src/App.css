@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom css */
+.nav-item {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.navbar-brand {
+  margin-left: 30px;
+  font-size: 30px;
+}
+.main {
+  margin-top: 2%;
+  padding: 1%;
+}
+.card-img-top {
+  width: 300px !important;
+  height: 300px;
+  margin-left: 35%;
+}
+.card {
+  width: 50%;
+  margin-left: 25%;
+}
+.form-control {
+  width: 40% !important;
+}
+.head-tail-div {
+  margin-left: 30%;
+}
+.character-column {
+  display: inline-block;
+  vertical-align: top;
+}
