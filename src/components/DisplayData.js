@@ -1,14 +1,24 @@
 import React from "react";
 
-const DisplayData = ({ values, selectedValue }) => {
+const DisplayData = ({ values }) => {
   return (
     <div>
-      {values.map((character, index) => (
-        <div key={index}>
-          {character}
-          <br></br>
-        </div>
-      ))}
+      {values.map((cur, i, array) => {
+        if (array[i] === array[i - 1]) {
+          return (
+            <>
+              <span key={i}>{cur}</span>
+            </>
+          );
+        } else {
+          return (
+            <>
+              <br />
+              <span key={i}>New Element :{cur}</span>
+            </>
+          );
+        }
+      })}
     </div>
   );
 };

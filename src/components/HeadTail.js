@@ -13,9 +13,10 @@ const HeadTail = () => {
     } else {
       setValues([...values, selectedValue]);
       setIsError(false);
+      setSelectedValue("");
     }
   };
-  // console.log(values);
+
   return (
     <div className="main">
       <div className="head-tail-div">
@@ -45,7 +46,7 @@ const HeadTail = () => {
           </button>
         </form>
       </div>
-      <DisplayData values={values} selectedValue={selectedValue} />
+      <DisplayData values={values} />
     </div>
   );
 };
